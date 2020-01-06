@@ -1,0 +1,12 @@
+<button (click)="start()">Iniciar</button>
+
+<button (click)="stop()">Finalizar</button>
+
+<br /><br />
+
+<h1>Mensajes:</h1>
+<ul>
+    <li *ngFor="let message of messages">
+        {{ message.publisher }}: {{ message.message.text }}
+    </li>
+</ul>
